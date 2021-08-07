@@ -1,0 +1,43 @@
+.features-icons {
+  width: 270px;
+  height: 120px;
+  background: var(--team-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.icons {
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
+}
+.pre-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-item {
+  display: flex;
+}
+.features-item li {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

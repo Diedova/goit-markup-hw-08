@@ -1,0 +1,28 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    fill: var(--pretty-color);
+    border: 1px solid var(--pretty-color);
+  }
+}
+.client-list {
+  display: flex;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+}

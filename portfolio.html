@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header" >
+        <div class="container">
+        <!--Шапка сайта-->
+    
+        <a class="logo header__logo" href="">Web<span class="logo__accent">Studio</span></a>
+        <nav >
+            <ul class="nav-list">
+                <li class="nav-list__item"><a class="nav-list__link" href="./index.html">Студия</a></li>
+                <li class="nav-list__item"><a class="nav-list__link--current" href="">Портфолио</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="media-list" >
+            <li class="media-list__item">
+                <a class="media-list__link" href="mailto:info@devstudio.com"><svg class="media-list__icon" width="16" height="12">
+                <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+            <li class="media-list__item">
+                <a class="media-list__link" href="tel:+380961111111"><svg class="media-list__icon" width="10" height="16">
+                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+        </div>
+    </header>
+
+    <main>
+     <section class="portfolio-section" >
+        <div class="container">
+
+          <!-- <h2>Портфолио</h2> -->
+
+          <ul class="button-item">
+             <li>
+                 <button class="portfolio-but" type="button">Все</button>
+             </li>
+             <li>
+                 <button class="portfolio-but" type="button">Веб-сайты</button>
+              </li>
+              <li>
+                 <button class="portfolio-but" type="button">Приложения</button>
+              </li>
+              <li>
+                <button class="portfolio-but" type="button">Дизайн</button>
+              </li>
+               <li>
+                <button class="portfolio-but" type="button">Маркетинг</button>
+              </li>
+          </ul>
+
+           <ul class="cards">
+          <li class="cards-item">
+            <a class="cards-thumb" href="">
+            <div class="cards-link"><img src="./images/img5.jpg" alt="techno" width="370">
+             <p class="cards-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+            шпионажа и атак на защищённые сервера конкурентов.</p></div>
+             <div class="cards-list"><h3 class="projects">Технокряк</h3>
+             <p class="subsection">Веб-сайт</p></div></a>
+          </li>
+           <li class="cards-item">
+            <a href=""><img src="./images/img6.jpg" alt="poster" width="370">
+            <div class="cards-list"><h3 class="projects">Постер New Orlean vs Golden Star</h3>
+            <p class="subsection">Дизайн</p></div></a>
+           </li>
+            <li class="cards-item">
+             <a href=""><img src="./images/img7.jpg" alt="restaurant" width="370">
+            <div class="cards-list"><h3 class="projects">Ресторан Seafood</h3>
+            <p class="subsection">Приложение</p></div></a>
+           </li>
+            <li class="cards-item">
+             <a href=""><img src="./images/img8.jpg" alt="" width="370">
+            <div class="cards-list"><h3 class="projects">Проект Prime</h3>
+            <p class="subsection">Маркетинг</p></div></a>
+           </li>
+            <li class="cards-item">
+            <a href=""><img src="./images/img9.jpg" alt="box" width="370">
+            <div class="cards-list"><h3 class="projects">Проект Boxes</h3>
+            <p class="subsection">Приложение</p></div></a>
+        </li>
+        <li class="cards-item">
+            <a href=""><img src="./images/img10.jpg" alt="borders" width="370">
+            <div class="cards-list"><h3 class="projects">Inspiration has no Borders</h3>
+            <p class="subsection">Веб-сайт</p></div></a>
+        </li>
+        <li class="cards-item">
+            <a href=""><img src="./images/img11.jpg" alt="edition" width="370">
+            <div class="cards-list"><h3 class="projects">Издание Limited Edition</h3>
+            <p class="subsection">Дизайн</p></div></a>
+        </li>
+        <li class="cards-item">
+            <a href=""><img src="./images/img12.jpg" alt="project" width="370">
+        <div class="cards-list"><h3 class="projects">Проект LAB</h3>
+            <p class="subsection">Маркетинг</p></div></a>
+        </li>
+        <li class="cards-item">
+            <a href=""><img src="./images/img13.jpg" alt="business" width="370">
+                <div class="cards-list">
+                    <h3 class="projects">Growing Business</h3>
+                    <p class="subsection">Приложение</p>
+                </div>
+            </a>
+        </li>
+     </ul>   
+    </div>
+     </section>   
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-address">
+                <a class="logo" href="">Web<span class="logo__accent--dark">Studio</span></a>
+                <address class="contacts">
+                    <ul class="address">
+                        <li>
+                            <a class="map link" href="https://goo.gl/maps/9oTHq5oARnokKQ6m6" target="_blank"
+                                rel="noopener noreferrer">
+                                г.Киев, пр-т Леси Украинки, 26 </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-icons">
+                <p class="icon-title">Присоединяйтесь</p>
+                <ul class="socail">
+                    <li class="socail__item">
+                        <a class="socail__link socail__link--dark" href="#">
+                            <svg width="20" height="20" class="socail__icon">
+                                <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socail__item">
+                        <a class="socail__link socail__link--dark" href="#">
+                            <svg width="20" height="20" class="socail__icon">
+                                <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                    <li class="socail__item">
+                        <a class="socail__link socail__link--dark" href="#">
+                            <svg width="20" height="20" class="socail__icon">
+                                <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="socail__item">
+                        <a class="socail__link socail__link--dark" href="#">
+                            <svg width="20" height="20" class="socail__icon">
+                                <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-email">
+                <p class="icon-title">Подпишитесь на рассылку</p>
+                <form class="email-form" name="email-form">
+                   <label >
+                       <input class="label-form" type="email" name="email" placeholder="E-mail" />
+                   </label>
+                   <button class="button" type="submit">Подписаться 
+                       <svg class="icon-btn" width="24px" height="24px" > 
+                           <use href="./images/icons/sprite.svg#icon-send"></use>
+                       </svg>
+                   </button>
+               </form>
+             </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>

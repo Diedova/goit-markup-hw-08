@@ -1,0 +1,30 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: var(--white-color);
+  padding: 40px 40px;
+}
+.close {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms var(--cubic);
+
+  &:focus,
+  &:hover {
+    fill: var(--pretty-color);
+  }
+}

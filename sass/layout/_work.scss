@@ -1,0 +1,25 @@
+.work {
+  padding-bottom: 82px;
+}
+.box {
+  display: flex;
+}
+.pre-title--box {
+  position: absolute;
+  width: 100%;
+  color: var(--white-color);
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  padding: 27px 0px;
+  margin-bottom: 0px;
+}
+.box__item:not(:last-child) {
+  margin-right: 30px;
+}
+.box__img {
+  display: block;
+}
+.box__label {
+  position: relative;
+}
