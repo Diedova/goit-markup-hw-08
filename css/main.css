@@ -41,7 +41,7 @@ a {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
   }
 }
@@ -54,7 +54,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -239,6 +239,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features-item li {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
 .pre-title {
   font-weight: bold;
   font-size: 14px;
@@ -266,6 +272,13 @@ a {
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .work {
