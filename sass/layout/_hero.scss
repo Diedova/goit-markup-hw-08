@@ -14,11 +14,19 @@
   background-position: center;
   background-size: cover;
 }
+
 .hero .title {
   margin-bottom: 30px;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero .title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 .button {
   width: 200px;
