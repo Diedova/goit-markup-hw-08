@@ -89,7 +89,7 @@
         </div>
         </section>
 
-        <!--! <section class="work">
+       <!-- <section class="work">
          <div class="container">
 
           <h2 class="title">Чем мы занимаемся</h2>
@@ -110,13 +110,20 @@
           </ul>
          </div>
 
-        </section> 
+        </section> -->
+
         <section class="team">
          <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="our-team">
           <li  class="our-team__item">
-             <img class="our-team__img" src="./images/img1.jpg" alt="member1" width="270" />
+             <picture>
+                <source srcset=" ./image/team/team-deck1.jpg 1x 1x, ./images/team/team-deck1@2xjpg 2x" media="(min-width: 1200px)">
+                <source srcset=" ./image/team/team-tablet1.jpg 1x, ./images/team/team-tablet1@2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset=" ./image/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x" media="(min-width: 480px)">
+               <img class="our-team__img" src="./images/img1.jpg" alt="member1" />   
+             </picture>
+             
             <div class="our-team__member" ><h3 class="our-team__surname">Игорь Демьяненко</h3>
              <p class="our-team__vocation">Product Designer</p>
             <ul class="socail">
@@ -244,7 +251,7 @@
             </ul>
          </div>
         </section>
-      <section class="client">
+   <!--   <section class="client">
          <div class="container">
       
             <h2 class="title">Постоянные клиенты</h2>
@@ -294,7 +301,7 @@
 
     </main>
 
-<!--  <footer class="footer">
+  <footer class="footer">
      <div class="container">
         <div class="footer-address">
       <a class="logo" href="">Web<span class="logo__accent--dark">Studio</span></a>

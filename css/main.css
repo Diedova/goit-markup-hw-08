@@ -147,11 +147,18 @@ a {
 
 .title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .hero {
@@ -314,12 +321,27 @@ a {
 
 .team {
   background: var(--team-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .our-team__surname {
@@ -340,7 +362,6 @@ a {
 }
 
 .our-team__member {
-  padding: 30px 32px 30px 32px;
   text-align: center;
   background: var(--white-color);
   border-radius: 0px 0px 4px 4px;
@@ -348,10 +369,21 @@ a {
 
 .our-team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.our-team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .our-team__img {
