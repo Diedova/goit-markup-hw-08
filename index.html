@@ -14,7 +14,7 @@
 
 </head>
 <body>
-   <!-- <header class="header">
+   <header class="header">
        <div class="container">
         
 
@@ -27,6 +27,9 @@
                 <li class="nav-list__item"><a class="nav-list__link" href="">Контакты</a></li>
             </ul>
         </nav>
+        <button class="mobile-menu_btn"><svg class="mobile-menu__icon">
+         <use href="./images/icons/sprite.svg#icon-menu"></use>
+      </svg></button>
         <ul class="media-list">
             <li class="media-list__item">
                 <a class="media-list__link" href="mailto:info@devstudio.com">
@@ -42,8 +45,9 @@
             </li>
         </ul>
       </div>
+      <div class="mobile-menu"></div>
     </header>
-    <main>-->
+    <main>
         <!-- Main content -->
         <section class="hero" >
          <div class="container">
@@ -89,7 +93,7 @@
         </div>
         </section>
 
-       <!-- <section class="work">
+      <section class="work">
          <div class="container">
 
           <h2 class="title">Чем мы занимаемся</h2>
@@ -110,7 +114,7 @@
           </ul>
          </div>
 
-        </section> -->
+        </section> 
 
         <section class="team">
          <div class="container">
@@ -118,10 +122,18 @@
           <ul class="our-team">
           <li  class="our-team__item">
              <picture>
-                <source srcset=" ./image/team/team-deck1.jpg 1x 1x, ./images/team/team-deck1@2xjpg 2x" media="(min-width: 1200px)">
-                <source srcset=" ./image/team/team-tablet1.jpg 1x, ./images/team/team-tablet1@2x.jpg 2x" media="(min-width: 768px)">
-                <source srcset=" ./image/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x" media="(min-width: 480px)">
-               <img class="our-team__img" src="./images/img1.jpg" alt="member1" />   
+               <source media="(min-width: 1200px )" srcset="./images/team/team-deck1.webp 1x, ./images/team/team-deck1@2x.webp 2x"
+               type="image/webp">
+               <source  media="(min-width: 1200px)" srcset="./images/team/team-deck1.jpg 1x, ./images/team/team-deck1@2x.jpg 2x">
+               
+               <source media="(min-width: 768px )" srcset="./images/team/team-tablet1.webp 1x, ./images/team/team-tablet1@2x.webp 2x"
+               type="image/webp"> 
+               <source media="(min-width: 768px)" srcset="./images/team/team-tablet1.jpg 1x, ./images/team/team-tablet1@2x.jpg 2x">
+              
+               <source media="(min-width: 480px )" srcset="./images/team/team1.webp 1x, ./images/team/team1@2x.webp 2x"
+               type="image/webp">
+               <source media="(min-width: 480px)" srcset="./images/team/team1.jpg 1x, ./images/team/team1@2x.jpg 2x">
+               <img class="our-team__img" src="./images/team/team1.jpg" alt="member1" />   
              </picture>
              
             <div class="our-team__member" ><h3 class="our-team__surname">Игорь Демьяненко</h3>
@@ -155,7 +167,21 @@
             </ul></div>
          </li>
           <li class="our-team__item">
-             <img class="our-team__img" src="./images/img2.jpg" alt="member2" width="270" />
+            <picture>
+               <source media="(min-width: 1200px )" srcset="./images/team/team-deck2.webp 1x, ./images/team/team-deck2@2x.webp 2x"
+                  type="image/webp">
+               <source media="(min-width: 1200px)" srcset="./images/team/team-deck2.jpg 1x, ./images/team/team-deck2@2x.jpg 2x">
+            
+               <source media="(min-width: 768px )"
+                  srcset="./images/team/team-tablet2.webp 1x, ./images/team/team-tablet2@2x.webp 2x" type="image/webp">
+               <source media="(min-width: 768px)" srcset="./images/team/team-tablet2.jpg 1x, ./images/team/team-tablet2@2x.jpg 2x">
+            
+               <source media="(min-width: 480px )" srcset="./images/team/team2.webp 1x, ./images/team/team2@2x.webp 2x"
+                  type="image/webp">
+               <source media="(min-width: 480px)" srcset="./images/team/team2.jpg 1x, ./images/team/team2@2x.jpg 2x">
+               <img class="our-team__img" src="./images/team/team2.jpg" alt="member2" />
+            </picture>
+             
             <div class="our-team__member"><h3 class="our-team__surname">Ольга Репина</h3>
              <p  class="our-team__vocation">Frontend Developer</p>
             <ul class="socail">
@@ -187,7 +213,20 @@
             </ul></div>
           </li>
           <li class="our-team__item">
-             <img class="our-team__img" src="./images/img3.jpg" alt="member3" width="270" />
+            <picture>
+               <source media="(min-width: 1200px )" srcset="./images/team/team-deck3.webp 1x, ./images/team/team-deck3@2x.webp 2x"
+                  type="image/webp">
+               <source media="(min-width: 1200px)" srcset="./images/team/team-deck3.jpg 1x, ./images/team/team-deck3@2x.jpg 2x">
+            
+               <source media="(min-width: 768px )"
+                  srcset="./images/team/team-tablet3.webp 1x, ./images/team/team-tablet3@2x.webp 2x" type="image/webp">
+               <source media="(min-width: 768px)" srcset="./images/team/team-tablet1.jpg 1x, ./images/team/team-tablet1@2x.jpg 2x">
+            
+               <source media="(min-width: 480px )" srcset="./images/team/team3.webp 1x, ./images/team/team3@2x.webp 2x"
+                  type="image/webp">
+               <source media="(min-width: 480px)" srcset="./images/team/team3.jpg 1x, ./images/team/team3@2x.jpg 2x">
+               <img class="our-team__img" src="./images/team/team3.jpg" alt="member3" />
+            </picture>
             <div class="our-team__member"> <h3 class="our-team__surname">Николай Тарасов</h3>
              <p  class="our-team__vocation">Marketing</p>
             <ul class="socail">
@@ -219,7 +258,20 @@
             </ul></div>
           </li>
           <li class="our-team__item">
-             <img class="our-team__img" src="./images/img4.jpg" alt="member4" width="270" />
+            <picture>
+               <source media="(min-width: 1200px )" srcset="./images/team/team-deck4.webp 1x, ./images/team/team-deck4@2x.webp 2x"
+                  type="image/webp">
+               <source media="(min-width: 1200px)" srcset="./images/team/team-deck4.jpg 1x, ./images/team/team-deck4@2x.jpg 2x">
+            
+               <source media="(min-width: 768px )"
+                  srcset="./images/team/team-tablet4.webp 1x, ./images/team/team-tablet4@2x.webp 2x" type="image/webp">
+               <source media="(min-width: 768px)" srcset="./images/team/team-tablet4.jpg 1x, ./images/team/team-tablet4@2x.jpg 2x">
+            
+               <source media="(min-width: 480px )" srcset="./images/team/team4.webp 1x, ./images/team/team4@2x.webp 2x"
+                  type="image/webp">
+               <source media="(min-width: 480px)" srcset="./images/team/team4.jpg 1x, ./images/team/team4@2x.jpg 2x">
+               <img class="our-team__img" src="./images/team/team4.jpg" alt="member4" />
+            </picture>
             <div class="our-team__member"><h3 class="our-team__surname">Михаил Ермаков</h3>
              <p  class="our-team__vocation">UI Designer</p>
             <ul class="socail">
@@ -251,7 +303,7 @@
             </ul>
          </div>
         </section>
-   <!--   <section class="client">
+     <section class="client">
          <div class="container">
       
             <h2 class="title">Постоянные клиенты</h2>
@@ -301,8 +353,8 @@
 
     </main>
 
-  <footer class="footer">
-     <div class="container">
+<footer class="footer">
+     <div class="container footer">
         <div class="footer-address">
       <a class="logo" href="">Web<span class="logo__accent--dark">Studio</span></a>
         <address class="contacts">
@@ -368,7 +420,7 @@
 -->
 <!-- Modal windows -->
 
-<!--<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
    <div class="modal">
       <button data-modal-close class="close">
          <svg class="close-icon" width="18" height="18">
@@ -414,7 +466,7 @@
 
    </div>
 
-</div>-->
+</div>
 
 <script src="./js/modal.js"></script>
 </body>

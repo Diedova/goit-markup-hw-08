@@ -1,5 +1,9 @@
 .work {
-  padding-bottom: 82px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-bottom: 82px;
+  }
 }
 .box {
   display: flex;

@@ -1,6 +1,10 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client-icon {
@@ -22,7 +26,26 @@
 }
 .client-list {
   display: flex;
-  & li:not(:last-child) {
-    margin-right: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -30px;
+  margin-left: -30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: unset;
   }
 }
+.client-list li {
+  width: 100%;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 2);
+  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+// .client-list {
+//   display: flex;
+//   & li:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }

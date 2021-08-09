@@ -17,7 +17,7 @@
   color: var(--rgba-color);
   width: 231px;
   margin-top: 20px;
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 .address li:first-child {
   color: var(--white-color);
@@ -32,12 +32,14 @@
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
+  // display: flex;
   margin-bottom: 20px;
 }
 .footer .container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .socail__link--dark {
   background-color: var(--footer-icon);
@@ -49,11 +51,13 @@
 }
 
 .footer-email {
-  margin-left: auto;
+  flex-direction: column;
+  align-items: center;
+  // margin-left: auto;
 }
 .email-form {
   align-items: center;
-  display: flex;
+  // display: flex;
 }
 .label-form {
   border: 1px solid rgba(255, 255, 255, 0.3);

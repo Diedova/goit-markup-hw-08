@@ -13,6 +13,17 @@
 .logo__accent {
   color: var(--black-color);
 }
+
+.mobile-menu__icon {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.mobile-menu {
+  position: fixed;
+}
 .nav-list__link,
 .media-list__link {
   transition: color 500ms var(--cubic);
@@ -44,12 +55,15 @@
 
 .nav-list,
 .media-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+  }
 }
 .nav-list__item:not(:last-child),
 .media-list__item:not(:last-child) {
