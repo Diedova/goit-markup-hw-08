@@ -20,7 +20,7 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--rgba-color);
-  width: 231px;
+  // width: 231px;
   margin-top: 20px;
   // margin-right: 70px;
 }
@@ -71,6 +71,9 @@
   // margin-left: auto;
 }
 .email-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   @media screen and (min-width: 768px) {
     display: inline-flex;
@@ -93,6 +96,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .icon-btn {
   margin-left: 10px;
   display: flex;
