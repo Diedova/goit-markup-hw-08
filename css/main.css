@@ -110,6 +110,7 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  padding: 48px 40px;
 }
 
 .mobile-menu.is-open {
@@ -144,6 +145,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mobile-nav {
+  margin-bottom: 302px;
+}
+
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-nav__link {
@@ -682,19 +691,44 @@ a {
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .button-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-item {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .button-item {
+    margin-bottom: 50px;
+  }
 }
 
 .button-item li:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-item li:first-child {
+    margin-right: 15px;
+  }
 }
 
 .portfolio-but {
@@ -728,8 +762,21 @@ a {
 }
 
 .cards-item {
-  width: 370px;
+  width: 100%;
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .cards-list {
@@ -938,10 +985,17 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: var(--white-color);
   padding: 40px 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close {
