@@ -425,7 +425,7 @@ a {
   .our-team {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -30px;
   }
 }
 
@@ -462,25 +462,24 @@ a {
 @media screen and (min-width: 768px) {
   .our-team__item {
     flex-basis: calc((100% - 60px) / 2);
-    margin: 15px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .our-team__item {
     flex-basis: calc((100% - 120px) / 4);
-    margin: 15px;
   }
 }
 
 .our-team__img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .socail {
-  display: inline-flex;
+  display: flex;
   fill: var(--icon-color);
 }
 
@@ -518,7 +517,6 @@ a {
 }
 
 .client-icon {
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -532,6 +530,13 @@ a {
 .client-icon:hover, .client-icon:focus {
   fill: var(--pretty-color);
   border: 1px solid var(--pretty-color);
+}
+
+.icons-client {
+  width: 106px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-list {
@@ -557,7 +562,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .client-list li {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 

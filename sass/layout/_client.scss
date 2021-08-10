@@ -8,7 +8,7 @@
 }
 
 .client-icon {
-  width: 170px;
+  // width: 130px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -23,6 +23,12 @@
     fill: var(--pretty-color);
     border: 1px solid var(--pretty-color);
   }
+}
+.icons-client {
+  width: 106px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 .client-list {
   display: flex;
@@ -40,7 +46,7 @@
   flex-basis: calc((100% - 60px) / 2);
   margin-left: 30px;
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 // .client-list {
