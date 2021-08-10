@@ -854,10 +854,15 @@ a {
 }
 
 .footer-address {
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    align-items: left;
+  }
 }
 
 .contacts {
@@ -869,6 +874,19 @@ a {
   color: var(--rgba-color);
   margin-top: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 
 .address li:first-child {
@@ -925,6 +943,12 @@ a {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-email {
+    margin-left: auto;
+  }
+}
+
 .email-form {
   width: 100%;
   display: flex;
@@ -934,7 +958,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .email-form {
-    display: inline-flex;
+    flex-direction: revert;
   }
 }
 
@@ -953,6 +977,14 @@ a {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .label-form {
+    display: inline;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .icon-btn {
