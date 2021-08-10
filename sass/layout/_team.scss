@@ -59,8 +59,10 @@
 }
 
 .socail {
-  display: flex;
+  display: inline-flex;
   fill: var(--icon-color);
+  justify-items: center;
+  align-items: center;
 }
 
 .socail__item:not(:last-child) {

@@ -15,11 +15,17 @@
 }
 
 .mobile-menu__icon {
+  // background-color: transparent;
+  // border: none;
+  // padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu_btn {
   background-color: transparent;
   border: none;
   padding: 0;
-  width: 40px;
-  height: 40px;
 }
 .mobile-menu {
   position: fixed;
