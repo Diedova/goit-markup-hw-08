@@ -247,7 +247,7 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .nav-list,
   .media-list {
     font-weight: 500;
@@ -259,15 +259,26 @@ a {
   }
 }
 
-.nav-list__item:not(:last-child),
-.media-list__item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 1200x) {
+  .media-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .media-list {
   position: relative;
   color: var(--text-color);
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .media-list {
+    display: block;
+  }
 }
 
 .media-list__icon {
@@ -881,6 +892,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--rgba-color);
   margin-top: 20px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
