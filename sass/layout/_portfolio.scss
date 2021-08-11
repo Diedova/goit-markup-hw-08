@@ -9,8 +9,10 @@
 .button-item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  //  margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
 
@@ -19,8 +21,17 @@
     }
   }
 }
-.button-item li:not(:last-child) {
-  margin-right: 8px;
+.button-item li {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 .button-item li:first-child {
   @media screen and (max-width: 767px) {
@@ -55,17 +66,26 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin: -15px;
+
+  & li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
+
 .cards li:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
+
 .cards-item {
-  // width: 370px;
   width: 100%;
   text-align: left;
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
+    margin: 15px;
+    width: 370px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 90px) / 3);
